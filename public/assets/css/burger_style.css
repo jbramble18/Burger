@@ -1,0 +1,46 @@
+
+
+* {
+  box-sizing: border-box;
+}
+/* li {
+    padding: 5px;
+    margin: 5px;
+    background: #faebd7;
+  }
+  
+  .label {
+    font-weight: bold;
+  }
+  
+  .create-update-form {
+    padding: 5px;
+    margin: 5px;
+    background: aqua;
+  }
+  
+  .form-group {
+    margin-bottom: 5px;
+  } */
+
+  img {
+    width: 300px;
+    height: auto;
+  }
+  
+  .jumbotron {
+    width: 100%;
+    height: auto;
+    background: #6b89ec
+  }
+
+  .btn {
+    color: black;
+  }
+
+  li {
+    padding: 5px;
+    font-size: 25px;
+    
+
+  }

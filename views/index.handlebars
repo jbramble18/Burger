@@ -1,0 +1,74 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 text-center" id="top">
+            <img src="/assets/img/hamburger-clipart-buger-17.gif" />
+            <h1>Eat-Da-Burger!</h1>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6 text-center" id="data">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h2>Burgers that have not been eaten</h2>
+                </div>
+                <div class="panel-body">
+
+                    <ul>
+                        {{#each burgers}}
+                        {{#unless this.devoured}}
+                        <li>
+                            {{!-- {{this.id}} --}}
+                            {{this.burger_name}}
+                            <br>
+                            <button type="submit" class="change-devoured btn btn-success active" id="devourbutton" data-id="{{this.id}}"
+                                data-newDevoured={{devour}}>Devour It!</button>
+                            <hr>
+
+                        </li>
+
+                        {{/unless}}
+                        {{/each}}
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 text-center" id="task">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h2> Burgers that have been eaten. NOMNOMNOM</h2>
+                    <div class="panel-body">
+                        <ul>
+                            {{#each burgers}}
+                            {{#if this.devoured}}
+                            
+                            <li>
+
+                                {{!-- {{this.id}} --}}
+                                {{this.burger_name}}
+                                <br>
+                                <button type = "button" class = "deleteburger btn btn-danger active" id = "deletebutton" data-id= "{{this.id}}" data-newDevoured="{{devoured}}">Remove</button>
+                                <hr>
+                            </li>
+                            {{/if}}
+                            {{/each}}
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center enter_section">
+                    <h2>Add a new burger</h2>
+                    <form class="create-burger">
+                        <div class="form-group">
+                            <p>Enter the name of a burger that you would like to eat, and click submit</p>
+                            <input type="text" class="form-control" name="burger_name" id="newburger">
+                        </div>
+                        <button type="submit" class="btn btn-warning active" id="burgername">Submit</button>
+                    </form>
+                </div>
+            </div>
