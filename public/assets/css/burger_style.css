@@ -31,7 +31,8 @@
   .jumbotron {
     width: 100%;
     height: auto;
-    background: #6b89ec
+    background-color: #6b89ec;
+    font-family: 'Fredoka One', cursive;
   }
 
   .btn {
@@ -41,6 +42,15 @@
   li {
     padding: 5px;
     font-size: 25px;
-    
-
   }
+
+  
+
+
+  
+
+  
+
+ 
+
+  

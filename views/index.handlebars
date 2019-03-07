@@ -1,11 +1,13 @@
 <div class="container">
+    <div class="jumbotron">
     <div class="row">
         <div class="col-md-12 text-center" id="top">
             <img src="/assets/img/hamburger-clipart-buger-17.gif" />
             <h1>Eat-Da-Burger!</h1>
         </div>
     </div>
-
+    </div>
+<div class = "jumbotron jumbotron-fluid">
     <div class="row">
         <div class="col-md-6 text-center" id="data">
             <div class="panel panel-default">
@@ -17,7 +19,7 @@
                     <ul>
                         {{#each burgers}}
                         {{#unless this.devoured}}
-                        <li>
+                        {{!-- <li> --}}
                             {{!-- {{this.id}} --}}
                             {{this.burger_name}}
                             <br>
@@ -25,7 +27,7 @@
                                 data-newDevoured={{devour}}>Devour It!</button>
                             <hr>
 
-                        </li>
+                        {{!-- </li> --}}
 
                         {{/unless}}
                         {{/each}}
@@ -42,14 +44,14 @@
                             {{#each burgers}}
                             {{#if this.devoured}}
                             
-                            <li>
+                            {{!-- <li> --}}
 
                                 {{!-- {{this.id}} --}}
                                 {{this.burger_name}}
                                 <br>
                                 <button type = "button" class = "deleteburger btn btn-danger active" id = "deletebutton" data-id= "{{this.id}}" data-newDevoured="{{devoured}}">Remove</button>
                                 <hr>
-                            </li>
+                            {{!-- </li> --}}
                             {{/if}}
                             {{/each}}
                         </ul>
@@ -57,7 +59,8 @@
 
                 </div>
             </div>
-        </div>
+        </div>  
+        </div>        
 
         <div class="container">
             <div class="row">
@@ -72,3 +75,5 @@
                     </form>
                 </div>
             </div>
+        </div>
+</div>
