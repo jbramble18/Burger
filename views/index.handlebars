@@ -10,11 +10,11 @@
 <div class = "jumbotron jumbotron-fluid">
     <div class="row">
         <div class="col-md-6 text-center" id="data">
-            <div class="panel panel-default">
-                <div class="panel-heading">
+            <div class="card card-default">
+                <div class="card-heading">
                     <h2>Burgers that have not been eaten</h2>
                 </div>
-                <div class="panel-body">
+                <div class="card-body">
 
                     <ul>
                         {{#each burgers}}
@@ -36,10 +36,10 @@
             </div>
         </div>
         <div class="col-md-6 text-center" id="task">
-            <div class="panel panel-default">
-                <div class="panel-heading">
+            <div class="card card-default">
+                <div class="card-heading">
                     <h2> Burgers that have been eaten. NOMNOMNOM</h2>
-                    <div class="panel-body">
+                    <div class="card-body">
                         <ul>
                             {{#each burgers}}
                             {{#if this.devoured}}
